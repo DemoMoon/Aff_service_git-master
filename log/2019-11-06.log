@@ -1,0 +1,228 @@
+2019-11-06 22:22:33,547 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:22:33,548 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:24:42,194 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:24:42,196 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:36:41,037 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:36:41,039 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:38:54,849 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:38:54,850 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:44:58,219 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:44:58,220 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:48:06,810 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:48:06,812 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 22:52:37,329 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 22:52:37,330 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 23:00:33,561 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 23:00:33,563 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 23:02:41,563 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 23:02:41,564 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 23:02:45,999 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:45,999 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:46,000 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:46,001 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:46,001 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:02:46,001 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:46,001 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:46,001 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:46,002 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:46,027 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:46,231 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:46,235 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:02:49,315 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:49,316 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:49,316 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:49,317 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:49,317 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:02:49,317 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:49,317 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:49,317 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:49,317 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:49,320 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:49,505 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:49,508 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:02:52,524 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:52,524 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:52,524 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:52,525 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:52,525 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:02:52,525 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:52,525 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:52,525 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:52,526 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:52,528 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:52,715 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:52,718 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:02:55,732 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:55,735 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:55,735 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:55,736 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:55,736 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:02:55,736 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:55,737 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:55,737 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:02:55,737 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:55,740 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:55,913 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:55,917 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:02:55,936 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:55,937 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:55,937 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:02:55,938 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:55,938 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:02:55,938 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:55,938 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:55,939 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:02:55,939 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:55,943 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:56,124 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:56,127 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:02:59,139 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:02:59,139 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:02:59,139 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:02:59,140 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:02:59,140 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:02:59,140 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:02:59,140 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:02:59,141 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:02:59,141 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:02:59,143 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:02:59,317 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:02:59,320 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:03:02,335 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:03:02,337 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:03:02,337 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:03:02,338 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:03:02,338 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:03:02,338 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:03:02,338 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:03:02,338 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:03:02,338 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:03:02,341 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:03:02,508 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:03:02,511 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:03:05,524 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:03:05,525 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:03:05,525 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:03:05,526 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:03:05,526 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:03:05,526 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:03:05,526 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:03:05,526 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:03:05,526 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:03:05,528 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:03:05,700 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:03:05,703 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:05:45,485 - writeCaseYml.py - DEBUG: 从/Users/demo/Downloads/Aff_service_git-master/aff/data目录下，读取文件blogpost.chlsj
+2019-11-06 23:05:45,487 - mkDir.py - DEBUG: logs目录已存在：/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost
+2019-11-06 23:05:50,227 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:05:50,227 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:05:50,228 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:50,229 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:05:50,229 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:05:50,230 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:05:50,230 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:05:50,230 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:50,230 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:05:50,252 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:05:50,437 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:05:50,445 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:05:53,512 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:05:53,512 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:05:53,512 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:53,513 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:05:53,513 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:05:53,513 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:05:53,513 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:05:53,513 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:53,513 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:05:53,518 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:05:53,691 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:05:53,694 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:05:56,707 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:05:56,707 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:05:56,708 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:56,708 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:05:56,709 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:05:56,709 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:05:56,709 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:05:56,709 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:56,709 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:05:56,711 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:05:56,887 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:05:56,890 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:05:59,903 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:05:59,903 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:05:59,904 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:59,904 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:05:59,904 - apiSend.py - INFO: 请求接口：reco_1
+2019-11-06 23:05:59,905 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:05:59,905 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:05:59,905 - apiSend.py - INFO: 请求参数: {'itemId': '5044251', 'itemTitle': 'Python面试必须要看的15个问题'}
+2019-11-06 23:05:59,905 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:05:59,909 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:06:00,081 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:06:00,083 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:06:00,099 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:06:00,099 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:06:00,100 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:00,100 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:06:00,100 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:06:00,100 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:06:00,101 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:06:00,101 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:00,101 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:06:00,103 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:06:00,278 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:06:00,282 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:06:03,293 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:06:03,295 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:06:03,296 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:03,296 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:06:03,297 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:06:03,297 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:06:03,297 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:06:03,297 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:03,297 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:06:03,300 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:06:03,484 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:06:03,487 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:06:06,503 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:06:06,503 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:06:06,503 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:06,504 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:06:06,504 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:06:06,505 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:06:06,505 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:06:06,505 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:06,505 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:06:06,507 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:06:06,769 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:06:06,775 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
+2019-11-06 23:06:09,788 - apiSend.py - INFO: ====================================================================================================
+2019-11-06 23:06:09,788 - apiSend.py - DEBUG: 请求头处理结果：None
+2019-11-06 23:06:09,788 - apiSend.py - DEBUG: 请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:09,789 - apiSend.py - DEBUG: host处理结果： recomm.cnblogs.com
+2019-11-06 23:06:09,789 - apiSend.py - INFO: 请求接口：reco_2
+2019-11-06 23:06:09,789 - apiSend.py - INFO: 请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+2019-11-06 23:06:09,789 - apiSend.py - INFO: 请求头: None
+2019-11-06 23:06:09,789 - apiSend.py - INFO: 请求参数: {'itemId': 5044251, 'itemTitle': None}
+2019-11-06 23:06:09,789 - apiSend.py - INFO: 请求方法: POST
+2019-11-06 23:06:09,792 - connectionpool.py - DEBUG: Starting new HTTPS connection (1): recomm.cnblogs.com
+2019-11-06 23:06:09,995 - connectionpool.py - DEBUG: https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+2019-11-06 23:06:10,001 - apiSend.py - INFO: 请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')

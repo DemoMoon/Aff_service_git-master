@@ -1,0 +1,380 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1573052750225" stop="1573052770012">
+  <name>test_reco</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1573052750225" status="failed" stop="1573052760091">
+      <description>
+
+        :param case_data: 测试用例
+        :return:
+        </description>
+      <name>TestReco.test_reco[case_data0]</name>
+      <failure>
+        <message>Exception: http状态码错误！
+ 415 != 503</message>
+        <stack-trace>self = &lt;test_reco.TestReco object at 0x10991c610&gt;
+case_data = {'address': '/api/v2/recomm/blogpost/reco', 'check': {'check_type': 'only_check_status', 'expected_code': 503, 'expected_request': 'result_reco.json'}, 'cookies': False, 'file': False, ...}
+
+    @pytest.mark.parametrize("case_data", case_dict["test_case"], ids=[])
+    @allure.story("reco")
+    @pytest.mark.flaky(reruns=3, reruns_delay=3)
+    def test_reco(self, case_data):
+        """
+    
+        :param case_data: 测试用例
+        :return:
+        """
+        self.init_relevance = ini_request(case_dict, PATH)
+        # 发送测试请求
+&gt;       api_send_check(case_data, case_dict, self.init_relevance, PATH)
+
+aff/testcase/blogpost/test_reco.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+bin/unit/apiSendCheck.py:28: in api_send_check
+    checkResult.check_result(case["test_name"], case["check"], code, data, _path, relevance)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_name = 'reco_1'
+case = {'check_type': 'only_check_status', 'expected_code': 503, 'expected_request': 'result_reco.json'}
+code = 415
+data = '&lt;html&gt;\n&lt;head&gt;\n    &lt;meta charset=\'utf-8\'&gt;\n    &lt;link rel="icon" href="//common.cnblogs.com/favicon.ico" type="imag...请发邮件至 contact&amp;#64;cnblogs.com 与我们联系。&lt;/p&gt;\n    &lt;p&gt;&lt;a href=\'https://www.cnblogs.com/\'&gt;返回网站首页&lt;/a&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;'
+_path = '/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost'
+relevance = None
+
+    def check_result(test_name, case, code, data, _path, relevance=None):
+        """
+        校验测试结果
+        :param test_name: 测试名称
+        :param case: 测试用例
+        :param code: HTTP状态
+        :param data: 返回的接口json数据
+        :param relevance: 关联值对象
+        :param _path: case路径
+        :return:
+        """
+        # 不校验结果
+        if case["check_type"] == 'no_check':
+            with allure.step("不校验结果"):
+                pass
+        # json格式校验
+        elif case["check_type"] == 'json':
+            expected_request = case["expected_request"]
+            if isinstance(case["expected_request"], str):
+                expected_request = readExpectedResult.read_json(test_name, expected_request, _path, relevance)
+            with allure.step("JSON格式校验"):
+                allure.attach("期望code", str(case["expected_code"]))
+                allure.attach('期望data', str(expected_request))
+                allure.attach("实际code", str(code))
+                allure.attach('实际data', str(data))
+            if int(code) == case["expected_code"]:
+                if not data:
+                    data = "{}"
+                check_json(expected_request, data)
+            else:
+                raise Exception("http状态码错误！\n %s != %s" % (code, case["expected_code"]))
+        # 只校验状态码
+        elif case["check_type"] == 'only_check_status':
+            with allure.step("校验HTTP状态"):
+                allure.attach("期望code", str(case["expected_code"]))
+                allure.attach("实际code", str(code))
+                allure.attach('实际data', str(data))
+            if int(code) == case["expected_code"]:
+                pass
+            else:
+&gt;               raise Exception("http状态码错误！\n %s != %s" % (code, case["expected_code"]))
+E               Exception: http状态码错误！
+E                415 != 503
+
+bin/unit/checkResult.py:77: Exception</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="89001671-867d-4bcf-a597-0f8dfe030f50-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="f6b5ac5f-bf2f-4465-a010-b8035a5cee69-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="7b9269b7-32be-49e7-a2aa-bb32408ed3f0-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="4458f355-3170-4649-8662-48ffb082b14f-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="feature" value="blogpost"/>
+        <label name="story" value="reco"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="77665-MainThread"/>
+        <label name="host" value="demodeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1573052750230" status="passed" stop="1573052750230">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="4343f7c0-24d8-4f94-a996-fcffa30eef73-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="6886a40d-9451-4b00-8f0c-3afc938e3c2c-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="c014cc6c-f058-4466-876c-2d463ec6d082-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="e7488da1-0d50-4011-9cc6-e233303163e8-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052750445" status="passed" stop="1573052750446">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="2d90135b-8e92-4e5b-9c6d-23ccb7d4a06a-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="03563a82-f946-4fe8-b79a-6e6c119f0c9d-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="28b52dba-721b-4543-9b92-1b03fbfcb423-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052753514" status="passed" stop="1573052753514">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="75a72fc9-eb49-4a88-a340-f81a5f5e7c2a-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="3863bb99-ed57-4613-a8a7-2c56b791bf35-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="d5c3c078-f5f6-4d73-a4f9-004b50d0f6e4-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="425174e0-1092-417e-a23e-aef1e4e58293-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052753694" status="passed" stop="1573052753694">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="e1056f73-2b37-4e28-b771-a8fef67f44de-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="e03bab16-6f08-4937-9a97-7e40e2d55d3c-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="c211d64b-1407-4e8a-9674-fe6023c0a1d5-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052756710" status="passed" stop="1573052756710">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="44b9abed-5ab2-43c1-b4f7-23eafbce4883-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="9da3037e-19d5-4ce2-926a-f01e693c8e3c-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="268a7a56-cd3d-4136-a55a-62552506599e-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="07b21e29-3f0c-45a4-8c4b-04093d0fdc92-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052756890" status="passed" stop="1573052756890">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="8acde98a-7e55-4c03-b162-0197f8ff419b-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="6049bc9b-3498-406a-9cc8-0146c46ed70c-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="5e13b749-29bd-4a96-ad80-4d3fa4dead2e-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052759906" status="passed" stop="1573052759906">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="004c0908-8cf7-4734-b8c2-ec31409df015-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="fa85a39e-0f2c-48be-a8dd-4c1a9a14fc52-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="8975be3b-71b1-46d6-93cd-5a1067c70e5a-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="4c164b9a-8317-44b4-808a-381817f7721b-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052760084" status="passed" stop="1573052760084">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="21b31f5b-13fb-4479-b5f0-0a676d335cce-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="27df7ccf-a54b-413c-929e-2d7eb36160a2-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="849b4cb8-975d-499d-b804-9b4d2a36a4d5-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1573052760098" status="failed" stop="1573052770012">
+      <description>
+
+        :param case_data: 测试用例
+        :return:
+        </description>
+      <name>TestReco.test_reco[case_data1]</name>
+      <failure>
+        <message>Exception: http状态码错误！
+ 415 != 503</message>
+        <stack-trace>self = &lt;test_reco.TestReco object at 0x109940b90&gt;
+case_data = {'address': '/api/v2/recomm/blogpost/reco', 'check': {'check_type': 'only_check_status', 'expected_code': 503, 'expected_request': 'result_reco.json'}, 'cookies': False, 'file': False, ...}
+
+    @pytest.mark.parametrize("case_data", case_dict["test_case"], ids=[])
+    @allure.story("reco")
+    @pytest.mark.flaky(reruns=3, reruns_delay=3)
+    def test_reco(self, case_data):
+        """
+    
+        :param case_data: 测试用例
+        :return:
+        """
+        self.init_relevance = ini_request(case_dict, PATH)
+        # 发送测试请求
+&gt;       api_send_check(case_data, case_dict, self.init_relevance, PATH)
+
+aff/testcase/blogpost/test_reco.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+bin/unit/apiSendCheck.py:28: in api_send_check
+    checkResult.check_result(case["test_name"], case["check"], code, data, _path, relevance)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_name = 'reco_2'
+case = {'check_type': 'only_check_status', 'expected_code': 503, 'expected_request': 'result_reco.json'}
+code = 415
+data = '&lt;html&gt;\n&lt;head&gt;\n    &lt;meta charset=\'utf-8\'&gt;\n    &lt;link rel="icon" href="//common.cnblogs.com/favicon.ico" type="imag...请发邮件至 contact&amp;#64;cnblogs.com 与我们联系。&lt;/p&gt;\n    &lt;p&gt;&lt;a href=\'https://www.cnblogs.com/\'&gt;返回网站首页&lt;/a&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;'
+_path = '/Users/demo/Downloads/Aff_service_git-master/aff/page/blogpost'
+relevance = None
+
+    def check_result(test_name, case, code, data, _path, relevance=None):
+        """
+        校验测试结果
+        :param test_name: 测试名称
+        :param case: 测试用例
+        :param code: HTTP状态
+        :param data: 返回的接口json数据
+        :param relevance: 关联值对象
+        :param _path: case路径
+        :return:
+        """
+        # 不校验结果
+        if case["check_type"] == 'no_check':
+            with allure.step("不校验结果"):
+                pass
+        # json格式校验
+        elif case["check_type"] == 'json':
+            expected_request = case["expected_request"]
+            if isinstance(case["expected_request"], str):
+                expected_request = readExpectedResult.read_json(test_name, expected_request, _path, relevance)
+            with allure.step("JSON格式校验"):
+                allure.attach("期望code", str(case["expected_code"]))
+                allure.attach('期望data', str(expected_request))
+                allure.attach("实际code", str(code))
+                allure.attach('实际data', str(data))
+            if int(code) == case["expected_code"]:
+                if not data:
+                    data = "{}"
+                check_json(expected_request, data)
+            else:
+                raise Exception("http状态码错误！\n %s != %s" % (code, case["expected_code"]))
+        # 只校验状态码
+        elif case["check_type"] == 'only_check_status':
+            with allure.step("校验HTTP状态"):
+                allure.attach("期望code", str(case["expected_code"]))
+                allure.attach("实际code", str(code))
+                allure.attach('实际data', str(data))
+            if int(code) == case["expected_code"]:
+                pass
+            else:
+&gt;               raise Exception("http状态码错误！\n %s != %s" % (code, case["expected_code"]))
+E               Exception: http状态码错误！
+E                415 != 503
+
+bin/unit/checkResult.py:77: Exception</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="40e2d5cb-5a59-4b92-ba14-c566fcc7817f-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="c5950498-2c64-49fb-949d-c365f278ee80-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="14247611-a106-4adf-9c39-1c13a6d737c9-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="2db1f9d2-67b6-4d63-83b4-098a52494ae4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="feature" value="blogpost"/>
+        <label name="story" value="reco"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="77665-MainThread"/>
+        <label name="host" value="demodeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1573052760101" status="passed" stop="1573052760101">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="6677a20b-f6bf-4b4e-b925-4903145b4b6d-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="58df0d6a-109d-4e1a-bcf4-20d3bf015402-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="213c3d03-8382-4d4b-9dd4-94f5f9f7fc2d-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="348429e9-5904-49a0-a3d3-f6362c903c99-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052760282" status="passed" stop="1573052760282">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="83a0b38e-196b-435d-a66f-c4fe41cfdeb7-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="ca642ea4-2594-4f75-be81-6beccb1391c0-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="6ee5eafd-f8e1-4613-9beb-83ec1f84e3a5-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052763298" status="passed" stop="1573052763298">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="3a0147f7-1013-41df-8b19-61ee6f04d3d3-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="a6bfd87a-f8d7-4c06-9d70-17f64ce91bb1-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="71d151b7-5a2d-4c2b-8b06-5a6424fd71e9-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="2576ff7b-7554-4db0-9d1d-c7da37f38751-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052763488" status="passed" stop="1573052763488">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="3084ccb3-d743-42db-b890-005ab9e2ac6f-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="f89d27d3-b302-4cb6-b4ec-86cf0f21363c-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="e1784a53-4265-4215-bc56-19dd546cf958-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052766506" status="passed" stop="1573052766506">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="7d0829db-b906-4f38-9e65-3fe8200e8e5a-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="6e680c30-ef82-4a9c-8cde-16eb36f66b41-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="ac407a03-7706-4851-a2ae-b7c85c6a499b-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="b0121416-97d0-4a9a-8b9b-4fddfc897c72-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052766775" status="passed" stop="1573052766775">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="ff1317fc-b9a1-415c-99d8-75e8e8d47268-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="03d270bb-ff1d-4e15-a263-2ffe9bdf1f66-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="d5c9e252-5904-49ae-8d53-1e541a935774-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052769790" status="passed" stop="1573052769790">
+          <name>POST请求接口</name>
+          <title>POST请求接口</title>
+          <attachments>
+            <attachment source="2c7627a3-4e1a-4429-b75a-3c1c1bd35ca3-attachment.txt" title="请求接口：" type="text/plain"/>
+            <attachment source="d8f13578-f31c-4532-9b96-65a73ca6685f-attachment.txt" title="请求地址" type="text/plain"/>
+            <attachment source="816f17af-284a-4f63-a15a-d0443c977fd4-attachment.txt" title="请求头" type="text/plain"/>
+            <attachment source="6ff8615b-e750-4422-b18b-c69779ec2159-attachment.txt" title="请求参数" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1573052770002" status="passed" stop="1573052770002">
+          <name>校验HTTP状态</name>
+          <title>校验HTTP状态</title>
+          <attachments>
+            <attachment source="71b86933-1ecc-4250-aa53-4bb8e9770d35-attachment.txt" title="期望code" type="text/plain"/>
+            <attachment source="d89587fa-12f1-4347-bf4a-76a0c7e77d0c-attachment.txt" title="实际code" type="text/plain"/>
+            <attachment source="55745f79-24c3-4226-ba1c-f7e21a9b2627-attachment.txt" title="实际data" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

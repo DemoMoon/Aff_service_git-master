@@ -1,0 +1,13 @@
+apiSend.py                  25 INFO     ====================================================================================================
+apiSend.py                  29 DEBUG    请求头处理结果：None
+apiSend.py                  31 DEBUG    请求参数处理结果：{'itemId': 5044251, 'itemTitle': None}
+apiSend.py                  42 DEBUG    host处理结果： recomm.cnblogs.com
+apiSend.py                  45 INFO     请求接口：reco_2
+apiSend.py                  46 INFO     请求地址：https://recomm.cnblogs.com/api/v2/recomm/blogpost/reco
+apiSend.py                  47 INFO     请求头: None
+apiSend.py                  48 INFO     请求参数: {'itemId': 5044251, 'itemTitle': None}
+apiSend.py                  58 INFO     请求方法: POST
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): recomm.cnblogs.com
+connectionpool.py          396 DEBUG    https://recomm.cnblogs.com:443 "POST /api/v2/recomm/blogpost/reco HTTP/1.1" 415 None
+apiSend.py                 130 INFO     请求接口结果：
+ (415, '<html>\n<head>\n    <meta charset=\'utf-8\'>\n    <link rel="icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />\n    <title>415_UnsupportedMediaType - 博客园</title>\n    <style type=\'text/css\'>\n        body {\n            margin: 8% auto 0;\n            max-width: 550px;\n            min-height: 200px;\n            padding: 10px;\n            font-family: \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Helvetica\', \'Arial\', sans-serif;\n            font-size: 14px;\n        }\n\n        p {\n            color: #555;\n            margin: 10px 10px;\n        }\n\n        img {\n            border: 0px;\n        }\n\n        .d {\n            color: #404040;\n        }\n    </style>\n</head>\n<body>\n    <a href=\'https://www.cnblogs.com/\'><img src=\'//common.cnblogs.com/images/logo_small.gif\' alt=\'cnblogs\' /></a>\n    <p><b>415. UnsupportedMediaType</b> 抱歉，请求失败。</p>\n    <p class=\'d\'>请确认您输入的网址是否正确，如果问题持续存在，请发邮件至 contact&#64;cnblogs.com 与我们联系。</p>\n    <p><a href=\'https://www.cnblogs.com/\'>返回网站首页</a></p>\n</body>\n</html>')
